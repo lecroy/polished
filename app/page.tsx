@@ -1,5 +1,6 @@
+import ApplyModal from "./components/ApplyModal";
+
 export default function Home() {
-  const applyUrl = "mailto:hello@getpolished.com";
 
   return (
     <div className="min-h-screen">
@@ -12,12 +13,10 @@ export default function Home() {
         >
           Polished
         </span>
-        <a
-          href={applyUrl}
+        <ApplyModal
+          label="Apply"
           className="text-sm font-medium bg-[#1A1A18] text-[#F9F7F3] px-4 py-2 rounded-full hover:bg-[#3a3a36] transition-colors"
-        >
-          Apply
-        </a>
+        />
       </nav>
 
       {/* Hero */}
@@ -43,12 +42,9 @@ export default function Home() {
             builds. One flat rate. A clean handoff. Yours to own.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <a
-              href={applyUrl}
+            <ApplyModal
               className="inline-block bg-[#1A1A18] text-[#F9F7F3] px-8 py-4 rounded-full text-base font-medium hover:bg-[#3a3a36] transition-colors"
-            >
-              Apply for a project →
-            </a>
+            />
             <p className="text-sm text-[#8a8a80]">$4,500 flat · 2–3 weeks · limited spots</p>
           </div>
         </div>
@@ -188,12 +184,9 @@ export default function Home() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <a
-              href={applyUrl}
+            <ApplyModal
               className="inline-block bg-[#F9F7F3] text-[#1A1A18] px-8 py-4 rounded-full text-base font-medium hover:bg-white transition-colors"
-            >
-              Apply for a project →
-            </a>
+            />
           </div>
         </div>
       </section>
@@ -237,12 +230,9 @@ export default function Home() {
             Tell us about your idea. We'll let you know if it's a good fit and
             what we can build together.
           </p>
-          <a
-            href={applyUrl}
+          <ApplyModal
             className="inline-block bg-[#1A1A18] text-[#F9F7F3] px-10 py-4 rounded-full text-base font-medium hover:bg-[#3a3a36] transition-colors"
-          >
-            Apply for a project →
-          </a>
+          />
           <p className="text-sm text-[#b0ada6] mt-5">
             $4,500 flat · 2–3 weeks · limited spots
           </p>
