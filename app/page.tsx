@@ -24,7 +24,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-24">
         <div className="max-w-3xl">
           <p className="text-sm font-medium text-[#8a8a80] uppercase tracking-widest mb-6">
-            Product design · AI-built · Flat rate
+            AI-built · Human-designed · Flat rate
           </p>
           <h1
             className="text-5xl sm:text-6xl md:text-7xl leading-[1.08] mb-8 text-[#1A1A18]"
