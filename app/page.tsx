@@ -30,9 +30,13 @@ export default function Home() {
             className="text-5xl sm:text-6xl md:text-7xl leading-[1.08] mb-8 text-[#1A1A18]"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Your idea,
+            Your idea.
             <br />
-            <em>built and shipped.</em>
+            <em>
+              Built,{" "}
+              <span className="text-shimmer">polished</span>
+              , and shipped.
+            </em>
           </h1>
           <p className="text-xl text-[#4a4a44] leading-relaxed max-w-xl mb-10">
             A product designer with 20 years of experience and AI that actually
