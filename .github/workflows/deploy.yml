@@ -31,7 +31,6 @@ jobs:
         run: npm run build
         env:
           BASE_PATH: /polished
-          NEXT_PUBLIC_FORMSPREE_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ID }}
 
       - name: Add .nojekyll
         run: touch ./out/.nojekyll

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
+const FORMSPREE_ID = "mreaajdp";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -56,10 +56,6 @@ export default function ApplyModal({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!FORMSPREE_ID) {
-      alert("Form not configured yet — check NEXT_PUBLIC_FORMSPREE_ID.");
-      return;
-    }
     setStatus("submitting");
     try {
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
